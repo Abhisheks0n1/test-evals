@@ -1,0 +1,12 @@
+{
+  "name": "@test-evals/shared",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts",
+    "./schema": "./src/schema.ts"
+  },
+  "dependencies": {
+    "zod": "^4.1.13"
+  }
+}

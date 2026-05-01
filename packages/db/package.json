@@ -1,0 +1,31 @@
+{
+  "name": "@test-evals/db",
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./src/index.ts"
+    },
+    "./*": {
+      "default": "./src/*.ts"
+    }
+  },
+  "scripts": {
+    "db:push": "drizzle-kit push",
+    "db:generate": "drizzle-kit generate",
+    "db:studio": "drizzle-kit studio",
+    "db:migrate": "drizzle-kit migrate"
+  },
+  "dependencies": {
+    "@test-evals/env": "*",
+    "dotenv": "^17.2.2",
+    "drizzle-orm": "^0.36.0",
+    "pg": "^8.13.3",
+    "zod": "^4.1.13"
+  },
+  "devDependencies": {
+    "@test-evals/config": "*",
+    "@types/pg": "^8.16.0",
+    "drizzle-kit": "^0.31.0",
+    "typescript": "^6"
+  }
+}
